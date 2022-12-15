@@ -52,7 +52,7 @@ namespace TimeVoter
             reloj.Elapsed += (x, y) =>
             {
                 actualtime = World.GetWorld().Time;
-                if (actualtime >= 18 && actualtime <= 18.5)
+                if (actualtime >= 17 && actualtime <= 17.5)
                 {
                     if (!activevote)
                     {
@@ -62,7 +62,7 @@ namespace TimeVoter
                         activevote = true;
                     }
                 }
-                if (actualtime >= 18.6 && activevote)
+                if (actualtime >= 17.6 && activevote)
                 {
                     activevote = false;
                     ComprobarVotos();
@@ -150,7 +150,7 @@ namespace TimeVoter
                 player.MessageFrom("Legacy Lives", "---------------------- [" + this.green + " TimeVoter " + this.white + "] ----------------------");
                 player.MessageFrom("Legacy Lives", "Use" + this.blue + " /day " + this.white + "- to vote for day.");
                 player.MessageFrom("Legacy Lives", "Use" + this.blue + " /night " + this.white + "- to vote for night.");
-                player.MessageFrom("Legacy Lives", "The current time is: " + this.blue + actualtime + this.white + ", and the vote will start at " + this.blue + "18:00" + this.white + ".");
+                player.MessageFrom("Legacy Lives", "The current time is: " + this.blue + actualtime + this.white + ", and the vote will start at " + this.blue + "17:00" + this.white + ".");
             }
         }
     }
